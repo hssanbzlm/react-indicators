@@ -1,8 +1,14 @@
 import React from "react";
 
-const PageContent: React.FC = () => {
+interface columnProps{
+  date:Date
+}
+
+const PageContent: React.FC<columnProps> = ({date}) => { 
+  let formattedDate=`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+
   return (
-    <></>
+    <>{formattedDate}</>
   );
 };
 
