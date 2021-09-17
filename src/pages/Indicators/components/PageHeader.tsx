@@ -1,24 +1,35 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { Row, Col } from "antd";
-import Calendar, { OnChangeDateCallback } from 'react-calendar';
-
+import { DateRangePicker } from 'react-date-range';
+import { Ranges } from '../Indicators';
+import 'react-date-range/dist/styles.css'; 
+import 'react-date-range/dist/theme/default.css'; 
+import './PageHeader.css';
 interface columnProps{
-  change:OnChangeDateCallback;
-  value:Date;
+  change:Dispatch<SetStateAction<[Ranges]>>;
+  value:[Ranges];
 }
 
-const PageHeader: React.FC<columnProps> = ({change,value}) => {  
+
+const PageHeader: React.FC<columnProps> = ({change,value}) => {   
+  
   return (
     <Row>
       <Col span={24}>
-        <div className="page-title">
-          charts
+        <div className="page-title"> 
+        
+           <h1> CHARTS</h1>
         </div> 
-        <div className="header-calendar" > 
-            <Calendar   
-            onChange={change} 
-            value={value}
-            />
+        <div className="header-calendar" >  
+
+        <DateRangePicker
+        onChange={item => change([item.selection])}
+        showSelectionPreview={true}
+        moveRangeOnFirstSelection={false}
+        months={1}
+        ranges={value}
+        direction="horizontal"/>
+            
         </div>
       </Col>
     </Row>
