@@ -64,416 +64,417 @@
     ],
     "Data": [
         {
-            "Data": "01/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "2",
-            "ProfessionName": "Mecânico"
+            "Date": "01/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Mecânico",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 08:00 to 10:00"
         },
         {
-            "Data": "01/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "01/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Soldador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 08:00 to 16:00"
         },
         {
-            "Data": "01/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "3",
-            "ProfessionName": "Montador"
+            "Date": "01/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Montador",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 12:00 to 15:00"
         },
         {
-            "Data": "01/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "9",
-            "ProfessionName": "Eletricista"
+            "Date": "01/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Montador",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 07:00 to 16:00"
         },
         {
-            "Data": "01/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "10",
-            "ProfessionName": "Soldador"
+            "Date": "01/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Mecânico",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 07:00 to 17:00"
         },
         {
-            "Data": "01/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "4",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "01/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Eletricista",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 09:00 to 13:00"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "6",
-            "ProfessionName": "Mecânico"
+            "Date": "02/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Montador",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 08:00 to 14:00"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "7",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "02/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Soldador",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 06:00 to 13:00"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "10",
-            "ProfessionName": "Montador"
+            "Date": "02/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Engenheiro",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 08:00 to 18:00"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Eletricista"
+            "Date": "02/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Soldador",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 07:30 to 15:30"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "4",
-            "ProfessionName": "Soldador"
+            "Date": "02/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Montador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 13:00 to 17:00"
         },
         {
-            "Data": "02/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "8",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "02/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Mecânico",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 05:00 to 13:00"
         },
         {
-            "Data": "03/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "5",
-            "ProfessionName": "Mecânico"
+            "Date": "03/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Analista de Segurança",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 14:00 to 19:00"
         },
         {
-            "Data": "03/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "03/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Mecânico",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 07:00 to 15:00"
         },
         {
-            "Data": "03/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "7",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "03/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Eletricista",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 07:00 to 14:00"
         },
         {
-            "Data": "04/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "11",
-            "ProfessionName": "Soldador"
+            "Date": "04/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Engenheiro",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 07:00 to 18:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Mecânico"
+            "Date": "05/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Mecânico",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 13:00 to 21:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "4",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "05/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Analista de Segurança",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 08:00 to 12:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "5",
-            "ProfessionName": "Montador"
+            "Date": "05/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Montador",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 08:00 to 13:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "7",
-            "ProfessionName": "Eletricista"
+            "Date": "05/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Montador",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 07:00 to 14:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "5",
-            "ProfessionName": "Soldador"
+            "Date": "05/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Engenheiro",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 14:00 to 19:00"
         },
         {
-            "Data": "05/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "05/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Soldador",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 07:00 to 15:00"
         },
         {
-            "Data": "08/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "7",
-            "ProfessionName": "Montador"
+            "Date": "08/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Mecânico",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 15:00 to 22:00"
         },
         {
-            "Data": "08/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "2",
-            "ProfessionName": "Eletricista"
+            "Date": "08/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Soldador",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 08:00 to 10:00"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "6",
-            "ProfessionName": "Mecânico"
+            "Date": "09/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Montador",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 09:00 to 15:00"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "7",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "09/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Mecânico",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 07:00 to 14:00"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "6",
-            "ProfessionName": "Montador"
+            "Date": "09/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Mecânico",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 07:30 to 13:30"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "4",
-            "ProfessionName": "Eletricista"
+            "Date": "09/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Eletricista",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 08:00 to 12:00"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "6",
-            "ProfessionName": "Soldador"
+            "Date": "09/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 09:00 to 15:00"
         },
         {
-            "Data": "09/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "7",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "09/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Analista de Segurança",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 07:00 to 14:00"
         },
         {
-            "Data": "12/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Soldador"
+            "Date": "12/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Montador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 07:30 to 15:30"
         },
         {
-            "Data": "12/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "5",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "12/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 15:00 to 20:00"
         },
         {
-            "Data": "13/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "4",
-            "ProfessionName": "Montador"
+            "Date": "13/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Eletricista",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 08:00 to 12:00"
         },
         {
-            "Data": "13/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "4",
-            "ProfessionName": "Montador"
+            "Date": "13/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Analista de Segurança",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 08:00 to 12:00"
         },
         {
-            "Data": "14/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "2",
-            "ProfessionName": "Eletricista"
+            "Date": "14/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Mecânico",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 11:00 to 13:00"
         },
         {
-            "Data": "14/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "7",
-            "ProfessionName": "Soldador"
+            "Date": "14/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Engenheiro",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 15:00 to 22:00"
         },
         {
-            "Data": "14/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "5",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "14/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Eletricista",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 14:00 to 19:00"
         },
         {
-            "Data": "14/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "4",
-            "ProfessionName": "Mecânico"
+            "Date": "14/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Mecânico",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 13:00 to 17:00"
         },
         {
-            "Data": "15/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "3",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "15/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Soldador",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 08:00 to 11:00"
         },
         {
-            "Data": "15/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "8",
-            "ProfessionName": "Montador"
+            "Date": "15/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 07:00 to 15:00"
         },
         {
-            "Data": "16/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "6",
-            "ProfessionName": "Eletricista"
+            "Date": "16/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Analista de Segurança",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 07:30 to 13:30"
         },
         {
-            "Data": "17/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "5",
-            "ProfessionName": "Soldador"
+            "Date": "17/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Soldador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 08:00 to 13:00"
         },
         {
-            "Data": "17/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "4",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "17/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Mecânico",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 13:00 to 17:00"
         },
         {
-            "Data": "17/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "6",
-            "ProfessionName": "Montador"
+            "Date": "17/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Eletricista",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 08:00 to 14:00"
         },
         {
-            "Data": "17/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "6",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "17/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 09:00 to 15:00"
         },
         {
-            "Data": "17/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "7",
-            "ProfessionName": "Mecânico"
+            "Date": "17/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Mecânico",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 07:00 to 14:00"
         },
         {
-            "Data": "18/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "3",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "18/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Montador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 08:00 to 11:00"
         },
         {
-            "Data": "18/07/2021",
-            "Colaborador": "Julliana Carvalho",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "2",
-            "ProfessionName": "Eletricista"
+            "Date": "18/07/2021",
+            "Colaborator": "Julliana Carvalho",
+            "Professions": "Soldador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 13:00 to 15:00"
         },
         {
-            "Data": "19/07/2021",
-            "Colaborador": "Jose Santana",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "8",
-            "ProfessionName": "Montador"
+            "Date": "19/07/2021",
+            "Colaborator": "Jose Santana",
+            "Professions": "Montador",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 07:30 to 15:30"
         },
         {
-            "Data": "20/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "5",
-            "ProfessionName": "Soldador"
+            "Date": "20/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Analista de Segurança",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 07:00 to 12:00"
         },
         {
-            "Data": "20/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "6",
-            "ProfessionName": "Mecânico"
+            "Date": "20/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 08:00 to 14:00"
         },
         {
-            "Data": "20/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Pátio de Manutenção",
-            "Qnt Horas": "6",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "20/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Eletricista",
+            "Areas": "Pátio de Manutenção",
+            "Working_Hours": "from 07:30 to 13:30"
         },
         {
-            "Data": "21/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Primário",
-            "Qnt Horas": "3",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "21/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Soldador",
+            "Areas": "Galpão Primário",
+            "Working_Hours": "from 08:00 to 11:00"
         },
         {
-            "Data": "21/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "7",
-            "ProfessionName": "Soldador"
+            "Date": "21/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Mecânico",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 15:00 to 22:00"
         },
         {
-            "Data": "21/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Sala de Administração",
-            "Qnt Horas": "1"
+            "Date": "21/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Sala de Administração",
+            "Working_Hours": "from 08:00 to 09:00"
         },
         {
-            "Data": "22/07/2021",
-            "Colaborador": "Maria Santos",
-            "Area": "Galpão Secundário",
-            "Qnt Horas": "8",
-            "ProfessionName": "Analista de Sistemas"
+            "Date": "22/07/2021",
+            "Colaborator": "Maria Santos",
+            "Professions": "Montador",
+            "Areas": "Galpão Secundário",
+            "Working_Hours": "from 13:00 to 21:00"
         },
         {
-            "Data": "23/07/2021",
-            "Colaborador": "Carla Oliveira",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "2",
-            "ProfessionName": "Analista de Segurança"
+            "Date": "23/07/2021",
+            "Colaborator": "Carla Oliveira",
+            "Professions": "Analista de Sistemas",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 08:00 to 10:00"
         },
         {
-            "Data": "23/07/2021",
-            "Colaborador": "João da Silva",
-            "Area": "Ala de Montagem",
-            "Qnt Horas": "1",
-            "ProfessionName": "Mecânico"
+            "Date": "23/07/2021",
+            "Colaborator": "João da Silva",
+            "Professions": "Soldador",
+            "Areas": "Ala de Montagem",
+            "Working_Hours": "from 07:30 to 08:30"
         },
         {
-            "Data": "23/07/2021",
-            "Colaborador": "Carlos Teixiera",
-            "Area": "Sala de Tecnologia",
-            "Qnt Horas": "8",
-            "ProfessionName": "Soldador"
+            "Date": "23/07/2021",
+            "Colaborator": "Carlos Teixiera",
+            "Professions": "Eletricista",
+            "Areas": "Sala de Tecnologia",
+            "Working_Hours": "from 13:00 to 21:00"
         }
     ]
 }
