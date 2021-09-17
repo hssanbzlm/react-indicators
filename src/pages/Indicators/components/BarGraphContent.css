@@ -1,0 +1,9 @@
+.bargraph-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bargraph-container >.drop-down-container{
+    margin-bottom: 30px;
+}

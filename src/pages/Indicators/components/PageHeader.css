@@ -1,0 +1,12 @@
+.header-calendar{
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
