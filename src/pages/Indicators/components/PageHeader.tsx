@@ -1,10 +1,10 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { Row, Col } from "antd";
 import { DateRangePicker } from 'react-date-range';
-import { Ranges } from '../Indicators';
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css'; 
 import './PageHeader.css';
+import { Ranges } from '../../../helpers/Interfaces';
 interface columnProps{
   change:Dispatch<SetStateAction<[Ranges]>>;
   value:[Ranges];
