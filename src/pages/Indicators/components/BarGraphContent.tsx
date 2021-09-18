@@ -5,6 +5,8 @@ import useDropdown from "./useDropdown";
 import VerticalBar from './VerticalBar';
 import { Area, Data, GraphData } from '../../../helpers/Interfaces';
 import './BarGraphContent.css'
+import { Alert } from 'antd';
+
 
 interface columnProps{ 
     data:Data[],
@@ -14,10 +16,12 @@ interface columnProps{
 const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> { 
     const [graphData,setGraphData]=useState<GraphData[]>([]);
     const [areas,setAreas]=useState<string[]>([]); 
-    const [selectedArea,AreasDropdown,setArea]=useDropdown("Areas","",areas)
+    const [selectedArea,AreasDropdown,setArea]=useDropdown("Areas","",areas);
+    const[isError,setError]=useState(false);
+
     useEffect(() => {  
         let isSubscribed = true
-     
+         setError(false);
         axios.get(' http://localhost:3001/Areas').then((ar)=>{  
             if(isSubscribed){
                 const AREAS=ar.data.map((area:Area)=>area.AreaName);
@@ -25,7 +29,7 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
                 setArea(AREAS[0]);//default selected area
           
             }
-        }).catch((err)=>console.log(err)) 
+        }).catch((err)=>setError(true)) 
 
         return ()=>{isSubscribed=false}
     },[setArea])
@@ -37,7 +41,8 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
     }, [startingDate,endingDate,selectedArea,data])
 
     
-    return (
+    return ( 
+        isError?<Alert message="Error while requesting areas list" type="error" />:
         <div className="bargraph-container" > 
         <div className="drop-down-container">
             <AreasDropdown/> 
@@ -46,7 +51,14 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
 
             { graphData.length>0?
 
-             <VerticalBar headTitle={`Working hours for each collaborator in ${selectedArea} between ${startingDate} and ${endingDate}`} y_Axis={graphData.map((v)=>v.Working_Hours)} x_Axis={graphData.map((v)=>v.Colaborator)} />:"Data not found"
+             <VerticalBar 
+              headTitle={`Working hours for each collaborator in ${selectedArea} between ${startingDate} and ${endingDate}`}
+              y_Axis={graphData.map((v)=>v.Working_Hours)} 
+              x_Axis={graphData.map((v)=>v.Colaborator)} 
+              />
+             : 
+             <Alert message="No data found, try another dates/filter" type="info" />
+
             }
         </div>
 

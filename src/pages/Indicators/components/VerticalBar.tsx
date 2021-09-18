@@ -1,5 +1,6 @@
 import React from 'react'
-import { Bar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2'; 
+import './VerticalBar.css'
 
 interface columnProps{
     headTitle:string,
@@ -40,8 +41,10 @@ const VerticalBar:React.FC<columnProps>=({headTitle,x_Axis,y_Axis})=> {
         <>
         <div className='header'>
           <h1 className='title'>{headTitle}</h1>
+        </div> 
+        <div className="bar">
+        <Bar options={{maintainAspectRatio:false}}	 data={data} />
         </div>
-        <Bar 	 data={data} />
       </>
     )
 }

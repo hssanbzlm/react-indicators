@@ -11,9 +11,6 @@ const SideBarHeader: React.FC = () => {
 
   return (
     <Header className="menu-header" style={{ padding: 3 }}>
-      <div className="header-icon">
-          <IconMenu className="menu-icon" onClick="" />
-      </div>
       <IconTrackfy className="menu-system-title" />
     </Header>
   )

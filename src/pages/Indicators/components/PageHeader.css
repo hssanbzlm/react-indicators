@@ -1,12 +1,26 @@
 .header-calendar{
-
     display: flex;
     justify-content: center;
-    height: auto;
     margin-bottom: 50px;
 }
 
 .page-title {
     display: flex;
     justify-content: center;
+} 
+
+
+@media screen and (max-width:342px) {
+    .rdrCalendarWrapper{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:312px) {
+    .rdrCalendarWrapper{
+        width: 500px;
+        margin-left: 50px;
+    }
+
 }

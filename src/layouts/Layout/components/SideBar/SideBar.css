@@ -58,7 +58,6 @@
   align-items: flex-start;
   padding: 0px !important;
   position: absolute;
-  width: 236px !important;
   height: 317px !important;
   left: 18px !important;
   top: 101px !important;
@@ -73,6 +72,7 @@
 .ant-menu-item {
   color: #fafbff !important;
   background-color: #2f4cdd !important;
+  width: 180px;
 }
 
 .ant-menu-inline .ant-menu-submenu-title {
@@ -265,4 +265,7 @@ li[class="submenu"]:last-child {
 .ant-layout-sider-collapsed .ant-layout-sider-children .menu .menu-item > div,
 .ant-layout-sider-collapsed .ant-layout-sider-children .menu .menu-item > span {
   margin-left: 0px;
+}
+.ant-layout-sider-zero-width-trigger{
+  z-index: 15;
 }

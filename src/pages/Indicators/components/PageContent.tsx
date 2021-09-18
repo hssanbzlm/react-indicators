@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Data } from "../../../helpers/Interfaces";
-import { Ranges } from "../Indicators";
+import { Data, Ranges } from "../../../helpers/Interfaces";
 import BarGraphContent from "./BarGraphContent";
 import PieGraphContent from "./PieGraphContent";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Alert } from 'antd';
 
 interface columnProps{
   range:[Ranges]
@@ -19,18 +19,23 @@ const PageContent: React.FC<columnProps> = ({range}) => {
   let formattedEndingDate=`${range[0].endDate?.getDate()}/${range[0].endDate?.getMonth()+1}/${range[0].endDate?.getFullYear()}`; 
 
   const [data,setData]=useState<Data[]>([]);
-  const [loading,setLoading]=useState(false);
+  const [isLoading,setLoading]=useState(false);
+  const[isError,setError]=useState(false);
   useEffect(() => {
     setLoading(true)
+    setError(false);
     axios.get('http://localhost:3001/Data').then((response)=>{ 
         const data:Data[]=response.data;
         setData(data);
         setLoading(false);
+    }).catch((err)=>{
+      setError(true)
     })
   }, [])
 
-  return ( 
-    loading? <>  
+  return (  
+    isError?<><Alert message="Error while requesting data" type="error" /></>:
+    isLoading? <>  
     <Loader
         type="Puff"
         color="#00BFFF"

@@ -11,6 +11,7 @@ const MainMenu: React.FC = () => {
         <span>Indicadores</span>
         <Link to="/indicadores" />
       </Menu.Item>
+     
     </Menu>
   )
 }

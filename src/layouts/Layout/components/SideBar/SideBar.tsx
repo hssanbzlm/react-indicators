@@ -1,23 +1,22 @@
 import React from "react";
 import { Layout } from "antd";
-
 import Header from "./Header";
 import Menu from "./Menu";
+import 'antd/dist/antd.css';
 
 import "./SideBar.css";
 
-const { Sider } = Layout;
+const { Sider} = Layout;
 
-const MainSideMenu: React.FC = () => {
+const MainSideMenu: React.FC = () => { 
+
   return (
-    <Sider
-      className="side-menu"
-      width={272}
-      collapsedWidth={70}
-      trigger={null}
-      collapsible
-      collapsed={false}
-    >
+    <Sider 
+    breakpoint="lg"
+    collapsedWidth="0"
+    className="side-menu"
+    width={230} 
+    >  
       <Header/>
       <Menu />
     </Sider>

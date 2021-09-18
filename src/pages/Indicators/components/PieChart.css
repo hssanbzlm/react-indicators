@@ -1,5 +1,5 @@
 .pie{
-    width: 500px;
+    width: 50%;
 }
 
 
@@ -7,7 +7,6 @@
 
     .pie{ 
         width: 300px; 
-        
     }
     
 }

@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { Row, Col } from "antd";
-import { DateRangePicker } from 'react-date-range';
+import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css'; 
 import './PageHeader.css';
@@ -21,14 +21,14 @@ const PageHeader: React.FC<columnProps> = ({change,value}) => {
            <h1> CHARTS</h1>
         </div> 
         <div className="header-calendar" >  
-
-        <DateRangePicker
+        <DateRange
         onChange={item => change([item.selection])}
         showSelectionPreview={true}
         moveRangeOnFirstSelection={false}
         months={1}
         ranges={value}
-        direction="horizontal"/>
+        direction="horizontal" 
+        />
             
         </div>
       </Col>
