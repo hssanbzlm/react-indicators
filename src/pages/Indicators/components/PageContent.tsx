@@ -6,6 +6,8 @@ import PieGraphContent from "./PieGraphContent";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Alert } from 'antd';
+import END_POINTS from '../../../api-config/end-points'
+
 
 interface columnProps{
   range:[Ranges]
@@ -24,7 +26,7 @@ const PageContent: React.FC<columnProps> = ({range}) => {
   useEffect(() => {
     setLoading(true)
     setError(false);
-    axios.get('http://localhost:3001/Data').then((response)=>{ 
+    axios.get(END_POINTS.data_end_point).then((response)=>{ 
         const data:Data[]=response.data;
         setData(data);
         setLoading(false);

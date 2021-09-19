@@ -6,6 +6,8 @@ import PieChart from './PieChart';
 import useDropdown from './useDropdown';
 import './PieGraphContent.css'
 import { Alert } from 'antd';
+import END_POINTS from '../../../api-config/end-points';
+
 
 interface columnProps{
     data:Data[],
@@ -22,7 +24,7 @@ const PieGraphContent:React.FC<columnProps>= ({data,startingDate,endingDate})=> 
     useEffect(() => {  
         let isSubscribed = true;
         setError(false);
-        axios.get(' http://localhost:3001/Professions').then((pro)=>{  
+        axios.get(END_POINTS.professions_end_point).then((pro)=>{  
             if(isSubscribed){
                 const PROFESSIONS=pro.data.map((area:Professions)=>area.ProfessionName);
                  setProfessions(PROFESSIONS);

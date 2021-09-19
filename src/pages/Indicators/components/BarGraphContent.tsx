@@ -6,6 +6,7 @@ import VerticalBar from './VerticalBar';
 import { Area, Data, GraphData } from '../../../helpers/Interfaces';
 import './BarGraphContent.css'
 import { Alert } from 'antd';
+import END_POINTS from '../../../api-config/end-points'
 
 
 interface columnProps{ 
@@ -22,7 +23,7 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
     useEffect(() => {  
         let isSubscribed = true
          setError(false);
-        axios.get(' http://localhost:3001/Areas').then((ar)=>{  
+        axios.get(END_POINTS.areas_end_point).then((ar)=>{  
             if(isSubscribed){
                 const AREAS=ar.data.map((area:Area)=>area.AreaName);
                 setAreas(AREAS);
