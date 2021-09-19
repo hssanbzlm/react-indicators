@@ -1,12 +1,12 @@
 import axios from 'axios';
 import React,{useState,useEffect} from 'react'
 import { getDataForSpecificArea, getGraphData } from '../../../helpers/helper'; 
-import useDropdown from "./useDropdown"; 
 import VerticalBar from './VerticalBar';
 import { Area, Data, GraphData } from '../../../helpers/Interfaces';
 import './BarGraphContent.css'
 import { Alert } from 'antd';
 import END_POINTS from '../../../api-config/end-points'
+import DropDown from './DropDown';
 
 
 interface columnProps{ 
@@ -17,7 +17,7 @@ interface columnProps{
 const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> { 
     const [graphData,setGraphData]=useState<GraphData[]>([]);
     const [areas,setAreas]=useState<string[]>([]); 
-    const [selectedArea,AreasDropdown,setArea]=useDropdown("Areas","",areas);
+    const [selectedArea,setSelectedArea]=useState(areas[0]);
     const[isError,setError]=useState(false);
 
     useEffect(() => {  
@@ -26,14 +26,12 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
         axios.get(END_POINTS.areas_end_point).then((ar)=>{  
             if(isSubscribed){
                 const AREAS=ar.data.map((area:Area)=>area.AreaName);
-                setAreas(AREAS);
-                setArea(AREAS[0]);//default selected area
-          
+                setAreas(AREAS);          
             }
         }).catch((err)=>setError(true)) 
 
         return ()=>{isSubscribed=false}
-    },[setArea])
+    },[])
 
     useEffect(() => {  
         const dataForSpecificArea=getDataForSpecificArea(startingDate,endingDate,selectedArea,data);  
@@ -46,7 +44,7 @@ const BarGraphContent:React.FC<columnProps>=({data,startingDate,endingDate})=> {
         isError?<Alert message="Error while requesting areas list" type="error" />:
         <div className="bargraph-container" > 
         <div className="drop-down-container">
-            <AreasDropdown/> 
+            <DropDown label="Areas" selectedOption={selectedArea} options={areas} change={setSelectedArea}/> 
         </div>   
         <div className="bar-container" >
 

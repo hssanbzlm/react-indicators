@@ -3,10 +3,10 @@ import React,{useEffect, useState} from 'react'
 import { getDataForSpecificProfession, getPieData } from '../../../helpers/helper';
 import { Data, PieData, Professions } from '../../../helpers/Interfaces';
 import PieChart from './PieChart';
-import useDropdown from './useDropdown';
 import './PieGraphContent.css'
 import { Alert } from 'antd';
 import END_POINTS from '../../../api-config/end-points';
+import DropDown from './DropDown';
 
 
 interface columnProps{
@@ -17,8 +17,8 @@ interface columnProps{
 
 const PieGraphContent:React.FC<columnProps>= ({data,startingDate,endingDate})=> {  
     const [pieData,setPieData]=useState<PieData[]>([]);
-    const [professions,setProfessions]=useState<string[]>([]);  
-    const [selectedProfession,ProfessionsDropdown,setProfession]=useDropdown("Professions","",professions)
+    const [professions,setProfessions]=useState<string[]>([]);
+    const [selectedProfession,setSelectedProfession]=useState(professions[0]);  
     const [isError,setError]=useState(false);
 
     useEffect(() => {  
@@ -28,11 +28,10 @@ const PieGraphContent:React.FC<columnProps>= ({data,startingDate,endingDate})=> 
             if(isSubscribed){
                 const PROFESSIONS=pro.data.map((area:Professions)=>area.ProfessionName);
                  setProfessions(PROFESSIONS);
-                 setProfession(PROFESSIONS[0]);//default selected area
             }
         }).catch((err)=>setError(true)) 
         return ()=>{isSubscribed=false;}
-    },[setProfession])
+    },[])
 
     useEffect(() => { 
         const dataForSpecificProfessions=getDataForSpecificProfession(startingDate,endingDate,selectedProfession,data);
@@ -46,7 +45,8 @@ const PieGraphContent:React.FC<columnProps>= ({data,startingDate,endingDate})=> 
 
         <div className="piegraph-container" > 
             <div className="drop-down-container" >
-            <ProfessionsDropdown/> 
+            <DropDown label="Professions" selectedOption={selectedProfession} options={professions} change={setSelectedProfession}/> 
+
             </div>  
             <div className="pie-container" >
             { pieData.length>0?
