@@ -3,7 +3,6 @@ export interface Ranges {
   endDate?: Date | undefined;
   key?: string | undefined;
 }
-
 export interface Area {
   AreaName: string;
 }

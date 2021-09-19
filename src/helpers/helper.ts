@@ -17,18 +17,23 @@ export function getWorkingHours(hours: string) {
   const differenceHour = parseFloat(endingHour) - parseFloat(startingHour);
   const differenceMinute =
     parseFloat(endingMinute) - parseFloat(startingMinute);
-
+  var minuteResult, hoursResult;
   if (differenceMinute < 0) {
-    var minuteResult = 60 + differenceMinute;
-    var hoursResult = differenceHour - 1;
+    minuteResult = 60 + differenceMinute;
+    hoursResult = differenceHour - 1;
   } else {
     minuteResult = differenceMinute;
     hoursResult = differenceHour;
   }
+  if (minuteResult < 10) {
+    //less than 10 minutes. example 5 min will be returned 0.05
+    return hoursResult + parseFloat("0.0" + minuteResult);
+  }
+
   return hoursResult + parseFloat("0." + minuteResult);
 }
 
-function sumHours(x: number, y: number) {
+export function sumHours(x: number, y: number) {
   let remainderX = x - Math.floor(x);
   let remainderY = y - Math.floor(y);
   let sum;
