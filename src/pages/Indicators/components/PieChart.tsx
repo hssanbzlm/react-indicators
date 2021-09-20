@@ -1,13 +1,13 @@
 import React from 'react'
 import { Pie} from 'react-chartjs-2';
 import './PieChart.css'
-interface columnProps{
+interface PieChartProps{
     headTitle:string,
     labels:string[],
     pieData:number[]
 }
 
-const PieChart:React.FC<columnProps>=({headTitle,labels,pieData})=> { 
+const PieChart:React.FC<PieChartProps>=({headTitle,labels,pieData})=> { 
     
     const data = {
         labels: labels,

@@ -9,11 +9,11 @@ import { Alert } from 'antd';
 import END_POINTS from '../../../api-config/end-points'
 
 
-interface columnProps{
+interface PageContentProps{
   range:[Ranges]
 }
 
-const PageContent: React.FC<columnProps> = ({range}) => {  
+const PageContent: React.FC<PageContentProps> = ({range}) => {  
   // @ts-ignore  
   //Here I disabled tslint cause even when I added ? to startDate?.getMonth()+1 , ts complained about possible undefined value
   let formattedStartingDate=`${range[0].startDate?.getDate()}/${range[0].startDate?.getMonth()+1}/${range[0].startDate?.getFullYear()}`; 
@@ -31,6 +31,7 @@ const PageContent: React.FC<columnProps> = ({range}) => {
         setData(data);
         setLoading(false);
     }).catch((err)=>{
+      setLoading(false);
       setError(true)
     })
   }, [])

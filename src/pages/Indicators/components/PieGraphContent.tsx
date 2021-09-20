@@ -9,13 +9,13 @@ import END_POINTS from '../../../api-config/end-points';
 import DropDown from './DropDown';
 
 
-interface columnProps{
+interface PieGraphContentProps{
     data:Data[],
     startingDate:string,
     endingDate:string
 }
 
-const PieGraphContent:React.FC<columnProps>= ({data,startingDate,endingDate})=> {  
+const PieGraphContent:React.FC<PieGraphContentProps>= ({data,startingDate,endingDate})=> {  
     const [pieData,setPieData]=useState<PieData[]>([]);
     const [professions,setProfessions]=useState<string[]>([]);
     const [selectedProfession,setSelectedProfession]=useState(professions[0]);  

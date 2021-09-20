@@ -5,13 +5,13 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css'; 
 import './PageHeader.css';
 import { Ranges } from '../../../helpers/Interfaces';
-interface columnProps{
+interface PageHeaderProps{
   change:Dispatch<SetStateAction<[Ranges]>>;
   value:[Ranges];
 }
 
 
-const PageHeader: React.FC<columnProps> = ({change,value}) => {   
+const PageHeader: React.FC<PageHeaderProps> = ({change,value}) => {   
   
   return (
     <Row>

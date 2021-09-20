@@ -2,13 +2,13 @@ import React from 'react'
 import { Bar } from 'react-chartjs-2'; 
 import './VerticalBar.css'
 
-interface columnProps{
+interface VerticalBarProps{
     headTitle:string,
     x_Axis:string[],
     y_Axis:number[]
 }
 
-const VerticalBar:React.FC<columnProps>=({headTitle,x_Axis,y_Axis})=> { 
+const VerticalBar:React.FC<VerticalBarProps>=({headTitle,x_Axis,y_Axis})=> { 
     
     const data = {
         labels: x_Axis,

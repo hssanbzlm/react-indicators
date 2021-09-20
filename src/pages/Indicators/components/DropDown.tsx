@@ -1,13 +1,13 @@
-import React,{Dispatch, SetStateAction, useState} from 'react'
+import React,{Dispatch, SetStateAction} from 'react'
 
 
-interface columnProps{ 
+interface DropDownProps{ 
     label:string,
     options:string[]
     selectedOption:string,
     change:Dispatch<SetStateAction<string>>
 }
-const DropDown:React.FC<columnProps>=({label,options,selectedOption,change})=> { 
+const DropDown:React.FC<DropDownProps>=({label,options,selectedOption,change})=> { 
 
     const id = `use-dropdown-${label.replace(" ", "").toLowerCase()}`;
 
